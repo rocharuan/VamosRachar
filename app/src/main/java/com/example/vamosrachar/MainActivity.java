@@ -32,18 +32,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //pegando as views
         valorTotal = (EditText) findViewById(R.id.valorTextNumber);
         nPessoas = (EditText) findViewById(R.id.totalPessoasTextNumber);
         valorDividido = (TextView) findViewById(R.id.valortextView);
         compartilhar = (ImageButton) findViewById(R.id.shareImageButton);
         ouvir = (ImageButton) findViewById(R.id.listenImageButton);
 
+        //inicio da verificacao de se o TTS está apto a ser executado
         Intent checkIntent = new Intent();
         checkIntent.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
-        startActivityForResult(checkIntent, MY_DATA_CHECK_CODE);
+        //startActivityForResult(checkIntent, MY_DATA_CHECK_CODE);
 
+        //preparando o formato da moeda na view de resultado
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
 
+        //setando um listener que verifica se os dois edittext não são vazio. Quando os dois estão com algum valor a view de resultado é alterada
         valorTotal.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -83,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //funcao de compartilhar
         compartilhar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //funcao de ler um texto
         ouvir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -113,16 +119,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
+        //checa se o TTS esta apto a ser executado
         if (requestCode == MY_DATA_CHECK_CODE) {
             if (resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS) {
-                // success, create the TTS instance
+                // sucesso, cria a instancia do TTS
                 tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
                     @Override
                     public void onInit(int status) {
                         if (status == TextToSpeech.SUCCESS) {
 
-                           Log.i("TTS", "Initialization success.");
+                           Log.i("TTS", getString(R.string.sucessoTTS));
                         } else {
                             Intent installIntent = new Intent();
                             installIntent.setAction(
@@ -132,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             } else {
-                // missing data, install it
+                //falha, tenta instalar
                 Intent installIntent = new Intent();
                 installIntent.setAction(
                         TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA);
@@ -143,9 +149,9 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+    //para o servico do TTS quando sai do aplicativo
     @Override
     public void onDestroy() {
-        // Don't forget to shutdown!
         if (tts != null) {
             tts.stop();
             tts.shutdown();

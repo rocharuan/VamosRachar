@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11041666666666666" />
-        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout-2560x1600/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout-land/activity_main.xml" value="0.10758377425044091" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout-long/acitivy_main.xml" value="0.14173497267759563" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout-w1600dp-h2560dp/activity_main.xml" value="0.18795289855072464" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout-xlarge/activity_main.xml" value="0.14173497267759563" />
+        <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/layout/activity_main.xml" value="0.3177083333333333" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/rocha/AndroidStudioProjects/VamosRachar/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11041666666666666" />
       </map>

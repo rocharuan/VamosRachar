@@ -21,7 +21,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
             android:layout_weight="20"
-            app:srcCompat="@drawable/bill" />
+            app:srcCompat="@drawable/splitbill" />
 
         <EditText
             android:id="@+id/valorTextNumber"

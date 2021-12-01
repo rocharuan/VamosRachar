@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Vamos Rachar</string>
+    <string name="valorTextNumber">Digite o valor</string>
+    <string name="totalPessoasTextNumber">Digite o número de pessoas</string>
+    <string name="numerotextView">O valor que cada um deve pagar é</string>
+    <string name="shareImageButton">Compartilhar o valor a ser dividido</string>
+    <string name="listenImageButton">Escutar o valor a ser dividido</string>
+    <string name="sucessoTTS">Inicialização do TTS bem sucedida</string>
+
 </resources>

@@ -20,14 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
-            android:layout_weight="20"
+            android:layout_weight="60"
             app:srcCompat="@drawable/bill" />
 
         <EditText
             android:id="@+id/valorTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="20"
+            android:layout_weight="12"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/valorTextNumber"
@@ -37,7 +37,7 @@
             android:id="@+id/totalPessoasTextNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="20"
+            android:layout_weight="12"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/totalPessoasTextNumber"
@@ -47,7 +47,7 @@
             android:id="@+id/numerotextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="20"
+            android:layout_weight="12"
             android:text="@string/numerotextView"
             app:autoSizeTextType="uniform"
             android:gravity="center"
@@ -57,7 +57,7 @@
             android:id="@+id/valortextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="20"
+            android:layout_weight="12"
             android:gravity="center"
             app:autoSizeTextType="uniform"
             android:textColor="@color/black"/>
@@ -68,7 +68,7 @@
             android:layout_height="50dp"
             android:orientation="horizontal"
             android:gravity="center_horizontal"
-            android:layout_weight="20"
+            android:layout_weight="12"
             android:padding="6dp"
             android:weightSum="2">
 

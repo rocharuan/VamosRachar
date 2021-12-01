@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lets Split It</string>
+    <string name="valorTextNumber">Enter value</string>
+    <string name="totalPessoasTextNumber">Enter number of people</string>
+    <string name="numerotextView">The amount each must pay is</string>
+    <string name="shareImageButton">Share the amount to be divided</string>
+    <string name="listenImageButton">Listen to the amount to be divided</string>
+    <string name="sucessoTTS">TTS initialization success</string>
+</resources>
